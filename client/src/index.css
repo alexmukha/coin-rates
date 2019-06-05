@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  background-image: url("https://www.newsbtc.com/wp-content/uploads/2018/08/techanalysis-alts5-700x400.jpg");
+  background-repeat: no-repeat;
+  /* background-position: bottom; */
+  background-size: 100% 100ch;
+  height: 100%;
+  width: auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.bm-100 {
+  margin-bottom: 100px;
+}
+
+.bglayer{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.rate {
+  margin: 15px 0 15px 5px;
+  width: 200px;
+  text-align: right;
+}
+
+.cobinhood {
+background: url("https://cdn-images-1.medium.com/max/1200/1*7Znh2Q0qlaJOtA2MUr0rPg.jpeg");
+width: 100%;
+height: 300px;
+background-repeat: no-repeat;
+background-position: center;
+-webkit-background-size: contain;
+-moz-background-size: contain;
+-o-background-size: contain;
+background-size: contain;
+}
+
+.binance {
+  background: url("https://siliconangle.com/wp-content/blogs.dir/1/files/2018/03/binance.jpg");
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  }
+
+.CodeBoard {
+  background: rgb(0, 0, 0, 0.9);
+}
+.RateCard {
+  color: #fff;
+}
+.RateCard > div {
+  /* margin-left: 10px; */
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.RateCard > div > img {
+  display: inline-block;
+}
+.RateCard > div > p {
+  margin-left: 15px;
+  display: inline-block;
+}
+.RateCard > div > div {
+  /* height: 20px; */
+  margin: 18px;
+  width: 100px;
+  padding: 0 8px 0 0;
+  background-color: rgb(0, 0, 0, 0.9);
+  border-radius: 50px;
+}
+
+.RateCard img {
+  width: 35px;
+  height: 35px;
+}
