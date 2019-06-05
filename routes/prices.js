@@ -3,15 +3,15 @@
 // console.log(process.env)
 const binance = require("node-binance-api")().options({
   
-  APIKEY: process.env.APIKEY,
-  APISECRET: process.env.APISECRET,
+  APIKEY: process.env.BINANCE_API,
+  APISECRET: process.env.BINANCE_SECRET,
   useServerTime: true //
 });
 
 const cobinhood = require("node-cobinhood-api");
 
 cobinhood.options({
-  apiKey: process.env.APIKEY,
+  apiKey: process.env.COBINHOOD_API,
   verbose: true
 });
 
