@@ -1,0 +1,21 @@
+{
+  "development": {
+    "username": "wwvshu94ooprvgke",
+    "password": "dbzztqlin5xmxjnw",
+    "database": "cryptodb",
+    "host": "v02yrnuhptcod7dk.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql",
+    "port": "3306"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "cryptodb_test",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
+  }
+}
