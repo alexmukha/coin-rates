@@ -26,7 +26,7 @@ app.use("/api/users", users);
 require("./routes/api/apiRoutes")(app);
 require("./routes/api/htmlRoutes")(app);
 
-const port = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 var syncOptions = { force: false };
 // If running a test, set syncOptions.force to true
@@ -37,7 +37,7 @@ if (process.env.NODE_ENV === "test") {
 
 // Starting the server, syncing our models ------------------------------------/
 db.sequelize.sync(syncOptions).then(function() {
-  app.listen(port, function() {
-    console.log("==> 🌎  Start backend server on port %s", port);
+  app.listen(PORT, function() {
+    console.log("==> 🌎  Start backend server on port %s", PORT);
   });
 });
