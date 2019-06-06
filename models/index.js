@@ -5,7 +5,6 @@ const path = require("path");
 const Sequelize = require("sequelize");
 const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || "development";
-// const env = "development";
 const config = require(__dirname + "/../config/config.json")[env];
 const db = {};
 
@@ -19,8 +18,6 @@ if (config.use_env_variable) {
     config.database,
     config.username,
     config.password,
-    config.host,
-    config.port,
     config,
     {
       timestamps: false

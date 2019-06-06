@@ -1,28 +1,19 @@
 {
   "development": {
-    "username": "wwvshu94ooprvgke",
-    "password": "dbzztqlin5xmxjnw",
+    "username": "root",
+    "password": "mybootcamp19",
     "database": "cryptodb",
-    "host": "v02yrnuhptcod7dk.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    "port": 3306,
-    "use_env_variable": "JAWSDB_URL",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
-    "username": "wwvshu94ooprvgke",
-    "password": "dbzztqlin5xmxjnw",
-    "database": "cryptodb",
-    "host": "v02yrnuhptcod7dk.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    "port": 3306,
-    "use_env_variable": "JAWSDB_URL",
+    "username": "root",
+    "password": "password",
+    "database": "cryptodb_test",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "production": {
-    "username": "wwvshu94ooprvgke",
-    "password": "dbzztqlin5xmxjnw",
-    "database": "cryptodb",
-    "host": "v02yrnuhptcod7dk.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    "port": 3306,
     "use_env_variable": "JAWSDB_URL",
     "dialect": "mysql"
   }
