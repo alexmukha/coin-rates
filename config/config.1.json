@@ -1,11 +1,10 @@
 {
   "development": {
-    "username": "wwvshu94ooprvgke",
-    "password": "dbzztqlin5xmxjnw",
+    "username": "root",
+    "password": "mybootcamp19",
     "database": "cryptodb",
-    "host": "v02yrnuhptcod7dk.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    "dialect": "mysql",
-    "port": "3306"
+    "host": "localhost",
+    "dialect": "mysql"
   },
   "test": {
     "username": "root",

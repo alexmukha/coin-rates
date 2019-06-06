@@ -4,7 +4,7 @@ const passport = require("passport");
 var db = require("./models");
 
 const users = require("./routes/api/users");
-// const PORT = 3306;
+
 const app = express();
 
 // Bodyparser middleware
@@ -26,8 +26,9 @@ app.use("/api/users", users);
 require("./routes/api/apiRoutes")(app);
 require("./routes/api/htmlRoutes")(app);
 
-const PORT = process.env.PORT || 3306;
-console.log(PORT);
+app.set('port', process.env.PORT ||3000);
+// const PORT = process.env.PORT || 3306;
+
 var syncOptions = { force: false };
 // If running a test, set syncOptions.force to true
 // clearing the `testdb`
