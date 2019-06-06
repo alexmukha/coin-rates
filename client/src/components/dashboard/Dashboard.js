@@ -14,7 +14,7 @@ class Dashboard extends Component {
 
     return (
       // <div style={{ height: "75vh" }} className="container valign-wrapper">
-        <div>
+        <div>&nbsp;
         </div>
       // {/* </div> */}
     );

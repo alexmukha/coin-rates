@@ -25,7 +25,7 @@ class CoinBoard extends Component {
             /> */}
             <RateCard getDataFunc={getCobPrices} />
           </div>
-          <div className="binance col s5">
+          <div className="binance col s6">
             {/* <img
               src="https://siliconangle.com/wp-content/blogs.dir/1/files/2018/03/binance.jpg"
               alt="binance"

@@ -9,7 +9,7 @@ module.exports = function(app) {
       console.log("BTC Price:", btc);
       
       prices.getBin("ETH", function(eth) {
-        console.log("ETH  Price:", eth);
+        console.log("ETH Price:", eth);
 
         prices.getBin("EOS", function(EOS) {
           console.log("EOS Price:", EOS);

@@ -34,36 +34,155 @@ code {
   text-align: right;
 }
 
-.cobinhood {
-background: url("https://cdn-images-1.medium.com/max/1200/1*7Znh2Q0qlaJOtA2MUr0rPg.jpeg");
-width: 100%;
-height: 300px;
-background-repeat: no-repeat;
-background-position: center;
--webkit-background-size: contain;
--moz-background-size: contain;
--o-background-size: contain;
-background-size: contain;
-}
+@media only screen and (max-width: 992px){
 
-.binance {
-  background: url("https://siliconangle.com/wp-content/blogs.dir/1/files/2018/03/binance.jpg");
+  .cobinhood {
+  font-size: 8pt;
+  background: url("./img/cobinhood.jpg");
   width: 100%;
   height: 300px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain;
   }
+  
+  .binance {
+    font-size: 8pt;
+    background: url("./img/binance.jpg");
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: left;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    }
+    .RateCard {
+      color: #fff;
+      margin-top: 50px;
+    }
+    .RateCard > div > div {
+      /* height: 20px; */
+      margin: 10px;
+      width: 100px;
+      padding: 0 8px 0 0;
+      background-color: rgb(0, 0, 0, 0.9);
+      border-radius: 50px;
+    }
+    
+    .RateCard img {
+      width: 25px;
+      height: 25px;
+    }
+}
 
-.CodeBoard {
+@media only screen and (min-width: 992px){
+
+  .cobinhood {
+  font-size: 9pt;
+  background: url("./img/cobinhood.jpg");
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: left;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  }
+  
+  .binance {
+    font-size: 9pt;
+    background: url("./img/binance.jpg");
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: left;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    }
+    .RateCard {
+      color: #fff;
+      margin-top: 50px;
+    }
+    .RateCard > div > div {
+      /* height: 20px; */
+      margin: 12px;
+      width: 100px;
+      padding: 0 8px 0 0;
+      background-color: rgb(0, 0, 0, 0.9);
+      border-radius: 50px;
+    }
+    
+    .RateCard img {
+      width: 30px;
+      height: 30px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+
+  .rate {
+    margin: 15px 0 15px 5px;
+    width: 200px;
+    text-align: right;
+  }
+  
+  .cobinhood {
+  font-size: 11pt;
+  background: url("./img/cobinhood.jpg");
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: left;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  }
+  
+  .binance {
+    font-size: 11pt;
+    background: url("./img/binance.jpg");
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: left;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    }
+    .RateCard {
+      color: #fff;
+      margin-top: 0px;
+    }
+    .RateCard > div > div {
+      /* height: 20px; */
+      margin: 18px;
+      width: 100px;
+      padding: 0 8px 0 0;
+      background-color: rgb(0, 0, 0, 0.9);
+      border-radius: 50px;
+    }
+    
+    .RateCard img {
+      width: 45px;
+      height: 45px;
+    }
+    
+}
+
+.CodeBoards {
   background: rgb(0, 0, 0, 0.9);
 }
-.RateCard {
-  color: #fff;
-}
+
 .RateCard > div {
   /* margin-left: 10px; */
   margin: auto;
@@ -76,17 +195,4 @@ background-size: contain;
 .RateCard > div > p {
   margin-left: 15px;
   display: inline-block;
-}
-.RateCard > div > div {
-  /* height: 20px; */
-  margin: 18px;
-  width: 100px;
-  padding: 0 8px 0 0;
-  background-color: rgb(0, 0, 0, 0.9);
-  border-radius: 50px;
-}
-
-.RateCard img {
-  width: 35px;
-  height: 35px;
 }
