@@ -26,8 +26,8 @@ app.use("/api/users", users);
 require("./routes/api/apiRoutes")(app);
 require("./routes/api/htmlRoutes")(app);
 
-// app.set('PORT', process.env.PORT ||3000);
-const PORT = process.env.PORT || 3000;
+app.set('PORT', process.env.PORT || 8080);
+const PORT = process.env.PORT || 8080;
 
 var syncOptions = { force: false };
 // If running a test, set syncOptions.force to true

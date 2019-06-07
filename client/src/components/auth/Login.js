@@ -69,7 +69,7 @@ class Login extends Component {
               </p>
             </div>
             <form noValidate onSubmit={this.onSubmit}>
-              <div className="input-field col s12">
+              <div className="input-field col s12 text-white">
                 <input
                   onChange={this.onChange}
                   value={this.state.email}
