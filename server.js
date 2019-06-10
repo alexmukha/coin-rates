@@ -1,35 +1,34 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const passport = require("passport");
+require("dotenv").config();
+var express = require("express");
+var exphbs = require("express-handlebars");
 var db = require("./models");
+var prices = require("./prices")
 
-const users = require("./routes/api/users");
 
-const app = express();
 
-// Bodyparser middleware
-app.use(
-  bodyParser.urlencoded({
-    extended: false
+var app = express();
+var PORT = process.env.PORT || 3000;
+
+// Middleware
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(express.static("public"));
+
+// Handlebars
+app.engine(
+  "handlebars",
+  exphbs({
+    defaultLayout: "main"
   })
 );
-app.use(bodyParser.json());
-
-// Passport middleware
-app.use(passport.initialize());
-
-// Passport config
-require("./config/passport")(passport);
+app.set("view engine", "handlebars");
 
 // Routes
-app.use("/api/users", users);
-require("./routes/api/apiRoutes")(app);
-require("./routes/api/htmlRoutes")(app);
-
-app.set('port', process.env.PORT ||3000);
-// const PORT = process.env.PORT || 3306;
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
 
 var syncOptions = { force: false };
+
 // If running a test, set syncOptions.force to true
 // clearing the `testdb`
 if (process.env.NODE_ENV === "test") {
@@ -39,6 +38,12 @@ if (process.env.NODE_ENV === "test") {
 // Starting the server, syncing our models ------------------------------------/
 db.sequelize.sync(syncOptions).then(function() {
   app.listen(PORT, function() {
-    console.log("==> 🌎  Start backend server on port %s", PORT);
+    console.log(
+      "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
+      PORT,
+      PORT
+    );
   });
 });
+
+module.exports = app;

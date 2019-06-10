@@ -1,28 +1,20 @@
 {
   "development": {
-    "username": "wwvshu94ooprvgke",
-    "password": "dbzztqlin5xmxjnw",
+    "username": "cryptobot",
+    "password": "crypticpass",
     "database": "cryptodb",
-    "host": "v02yrnuhptcod7dk.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    "port": 3306,
-    "use_env_variable": "JAWSDB_URL",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
-    "username": "wwvshu94ooprvgke",
-    "password": "dbzztqlin5xmxjnw",
+    "username": "cryptobot",
+    "password": "crypticpass",
     "database": "cryptodb",
-    "host": "v02yrnuhptcod7dk.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    "port": 3306,
-    "use_env_variable": "JAWSDB_URL",
-    "dialect": "mysql"
+    "host": "localhost",
+    "dialect": "mysql",
+    "logging": false
   },
   "production": {
-    "username": "wwvshu94ooprvgke",
-    "password": "dbzztqlin5xmxjnw",
-    "database": "cryptodb",
-    "host": "v02yrnuhptcod7dk.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    "port": 3306,
     "use_env_variable": "JAWSDB_URL",
     "dialect": "mysql"
   }

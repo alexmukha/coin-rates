@@ -1,34 +1,33 @@
 {
-  "name": "mern-auth",
+  "name": "my_project",
   "version": "1.0.0",
-  "description": "Mern Auth Example",
+  "description": "Project Starter",
   "main": "server.js",
   "scripts": {
-    "server": "nodemon server.js",
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "node server.js",
-    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-    "client": "cd client && npm run start",
-    "seed": "node scripts/seedDB.js",
-    "install": "cd client && npm install",
-    "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
+    "start": "node server.js",
+    "lint": "eslint **/*.js --quiet",
+    "fix": "eslint --fix .",
+    "test": "npm run lint && NODE_ENV=test mocha -u tdd --reporter spec --exit"
   },
-  "author": "",
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "body-parser": "^1.18.3",
-    "concurrently": "^4.0.1",
-    "express": "^4.16.4",
-    "is-empty": "^1.2.0",
-    "jsonwebtoken": "^8.3.0",
-    "mysql2": "^1.6.5",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mysql2": "^1.6.4",
     "node-binance-api": "^0.9.0",
     "node-cobinhood-api": "^0.2.3",
-    "passport": "^0.4.0",
-    "passport-jwt": "^4.0.0",
-    "sequelize": "^5.8.7",
-    "validator": "^10.9.0"
+    "nodemon": "^1.18.10",
+    "pm2": "^3.4.1",
+    "sequelize": "^5.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "mocha": "^5.2.0",
+    "prettier": "^1.13.7"
   }
 }
